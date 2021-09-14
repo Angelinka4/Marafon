@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
     <title>Document</title>
 </head>
-
 <body>
-    <header>
+    <header class="page-header">
         <nav class="thumb">
-            <div>
+            <div class="menu">
                 <ul class="head">
-                    <li><a href="">Каталог</a></li>
+                    <li><a href="#">Каталог</a></li>
                     <li><a href="">Доставка и оплата</a></li>
                     <li><a href="">Отзывы</a></li>
                     <li><a href="">Спецпредложения</a></li>
                     <li><a href="">Контакты</a></li>
                     <li><a href="">Корзина</a></li>
                 </ul>
-            </div>
-            <div class="logo">
-                <img src="./image/Лого.svg" alt="Логотип">
+                <a href=""><img class="logo" src="./image/Лого.svg" alt="Логотип"></a>
             </div>
         </nav>
     </header>
@@ -32,27 +35,35 @@
             <h1 class="avtor">Авторские букеты<span class="capital"> в Петербурге</span></h1>
             <h2 class="slogan">Оригинальные свежие букеты с доставкой по всему городу</h2>
             <button class="catalog" type="button">Смотреть каталог</button>
-            <img class="tulip" src="./image/Розовые_тюльпаны.jpg" alt="Букет розовыми тюльпанами">
+            <img class="tulip" src="./image/Розовые_тюльпаны.jpg" alt="Букет розовыми тюльпанами" width="386px"
+                height="404px">
             <img class="rose" src="./image/Букет_с_розами.jpg" alt="Букет с розами в бумаге">
         </section>
 
         <section class="advantages">
-            <ul class="delivery">
-                <li class="text-delivery">Быстрая доставка</li>
-                <li class="item-delivery">Можем собрать букет и передать его в доставку всего за час.</li>
-            </ul>
-            <img class="image-delivery" src="./image/Быстрая_доставка.svg" alt="Логотип быстрой доставки">
-            <ul class="flower">
-                <li class="text-flower">Всегда свежие цветы</li>
-                <li class="item-flower">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов
-                    каждый цветок.</li>
-            </ul>
-            <img class="image-flower" src="./image/bouquet1.svg" alt="Логотип букета">
-            <ul class="camera">
-                <li class="text-camera">Отправляем фото цветов</li>
-                <li class="item-camera">Перед доставкой сделаем фотографию букета и отправим вам.</li>
-            </ul>
-            <img class="image-camera" src="./image/фото.svg" alt="Логотип фотоаппарата">
+            <div class="delivery">
+                <ul>
+                    <li class="text-delivery">Быстрая доставка</li>
+                    <li class="item-delivery">Можем собрать букет и передать его в доставку всего за час.</li>
+                </ul>
+                <img class="image-delivery" src="./image/Быстрая_доставка.svg" alt="Логотип быстрой доставки">
+            </div>
+            <div class="flower">
+                <ul>
+                    <li class="text-flower">Всегда свежие цветы</li>
+                    <li class="item-flower">Тщательно следим за состоянием цветов, а опытные флористы отбирают для
+                        букетов
+                        каждый цветок.</li>
+                </ul>
+                <img class="image-flower" src="./image/bouquet1.svg" alt="Логотип букета">
+            </div>
+            <div class="camera">
+                <ul>
+                    <li class="text-camera">Отправляем фото цветов</li>
+                    <li class="item-camera">Перед доставкой сделаем фотографию букета и отправим вам.</li>
+                </ul>
+                <img class="image-camera" src="./image/фото.svg" alt="Логотип фотоаппарата">
+            </div>
         </section>
 
         <section class="popular">
@@ -63,17 +74,20 @@
             <h3 class="cost">3600 руб.</h3>
             <button class="buy" type="button">Заказать</button>
             <img class="image-popular" src="./image/букет_нежность.png" alt="Пример букета Нежность">
-            <div>
-                <a class="left" href=""><img src="./image/Arrow2.png" alt="Влево"></a>
-                <a class="right" href=""><img src="./image/Arrow1.png" alt="Вправо"></a>
+            <div class="choice">
+                <a href=""><img src="./image/Arrow2.png" alt="Влево"></a>
+                <a href=""><img src="./image/Arrow1.png" alt="Вправо"></a>
             </div>
         </section>
 
-        <section class="variety">
-            <a href=""><img class="widding" src="./image/свадебные_букеты.jpg" alt="Свадебные букеты">
-                <h3 class="head-widding">Свадебные букеты</h3>
-                <p class="text-widding">Букеты для невест</p>
-            </a>
+        <article class="variety">
+            <div>
+                <a class="widding" href="">
+                    <img class="image-widding" src="./image/свадебные_букеты.jpg" alt="Свадебные букеты">
+                    <h3 class="head-widding">Свадебные букеты</h3>
+                    <p class="text-widding">Букеты для невест</p>
+                </a>
+            </div>
             <a href="">
                 <img class="pions" src="./image/букеты_с_пионами.png" alt="Букет c пионами">
                 <h3 class="head-pions">Букеты с пионами</h3>
@@ -84,7 +98,7 @@
                 <h3 class="head-example">Выбрать букет</h3>
                 <p class="text-example">Букеты в ассортименте</p>
             </a>
-        </section>
+        </article>
 
         <section class="promo">
             <h2 class="head-promo">Скидка 10% на первый заказ</h2>
@@ -96,61 +110,66 @@
 
         <section class="ideal">
             <h2 class="head-steps">4 шага к идеальному букету</h2>
-            <img class="image-order" src="./image/логотип_заказа.svg" alt="логотип заказа">
-            <ul class="order">
-                <li class="head-order">Заказ</li>
-                <li class="text-order">Выберите понравившийся букет из каталога и оформите заказ</li>
-            </ul>
-            <img class="image-detals" src="./image/логотип_деталей.svg" alt="логотип деталей">
-            <ul class="detals">
-                <li class="head-detals">Уточнение деталей</li>
-                <li class="text-detals">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</li>
-            </ul>
-            <img class="image-payment" src="./image/логотип_оплаты.svg" alt="логотип оплаты">
-            <ul class="payment">
-                <li class="head-payment">Оплата</li>
-                <li class="text-payment">Оплатить заказ можно онлайн на сайте или при получении</li>
-            </ul>
-            <img class="image-carrier" src="./image/логотип_доставки.svg" alt="логотип доставки">
-            <ul class="carrier">
-                <li class="head-carrier">Доставка</li>
-                <li class="text-carrier">Курьер позвонит за час до прибытия и доставит заказ вовремя</li>
-            </ul>
+            <div class="order">
+                <img class="image-order" src="./image/логотип_заказа.svg" alt="логотип заказа">
+                <ul class="list-order">
+                    <li class="head-order">Заказ</li>
+                    <li class="text-order">Выберите понравившийся букет из каталога и оформите заказ</li>
+                </ul>
+            </div>
+            <div class="detals">
+                <img class="image-detals" src="./image/логотип_деталей.svg" alt="логотип деталей">
+                <ul class="list-detals">
+                    <li class="head-detals">Уточнение деталей</li>
+                    <li class="text-detals">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</li>
+                </ul>
+            </div>
+            <div class="payment">
+                <img class="image-payment" src="./image/логотип_оплаты.svg" alt="логотип оплаты">
+                <ul class="list-payment">
+                    <li class="head-payment">Оплата</li>
+                    <li class="text-payment">Оплатить заказ можно онлайн на сайте или при получении</li>
+                </ul>
+            </div>
+            <div class="carrier">
+                <img class="image-carrier" src="./image/логотип_доставки.svg" alt="логотип доставки">
+                <ul class="list-carrier">
+                    <li class="head-carrier">Доставка</li>
+                    <li class="text-carrier">Курьер позвонит за час до прибытия и доставит заказ вовремя</li>
+                </ul>
+            </div>
         </section>
-
         <section class="news">
             <h2 class="head-news">Следите за нашими новостями</h2>
             <p class="text-news">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-            <a><img class="image-inst" src="./image/instagram_icon1.png" alt="логотип инстаграмма"></a>
-            <a><img class="image-face" src="./image/facebook_icon1.png" alt="логотип фейсбука"></a>
-            <a><img class="image-twit" src="./image/twitter_icon1.png" alt="логотип твиттера"></a>
+            <div class="image-social">
+                <a><img class="image-inst" src="./image/instagram_icon1.png" alt="логотип инстаграмма"></a>
+                <a><img class="image-face" src="./image/facebook_icon1.png" alt="логотип фейсбука"></a>
+                <a><img class="image-twit" src="./image/twitter_icon1.png" alt="логотип твиттера"></a>
+            </div>
             <img class="image-news1" src="./image/новости_букет1.jpg" alt="букет с розами и зелеными листьями">
             <img class="image-news2" src="./image/новости_букет2.jpg" alt="букет с розовыми розами">
             <img class="image-news3" src="./image/новости_букет3.jpg" alt="букет с розовыми гвоздиками">
         </section>
-
         <section class="feedback">
             <h2 class="head-feedback">Отзывы</h2>
-            <p>
-            <blockquote class="blockquote-one">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени
-                доставки. Всем большое спасибо!
+            <blockquote class="blockquote-one">
+                <p class="feedback-text">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени
+                    доставки. Всем большое
+                    спасибо!</p>
                 <cite class="cite-one">Марина</cite>
             </blockquote>
-            </p>
-            <p>
-            <blockquote class="blockquote-two">Внимательные флористы, вежливые. Магазин находится прям рядом с метро.
-                Букет очень понравился, буду ещё заказывать!
+            <blockquote class="blockquote-two">
+                <p class="feedback-text">Внимательные флористы, вежливые. Магазин находится прям рядом с метро.
+                    Букет очень понравился, буду ещё заказывать!</p>
                 <cite class="cite-two">Татьяна</cite>
             </blockquote>
-            </p>
-            <p>
-            <blockquote class="blockquote-three">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы
-                всегда помогут и точно соберут красивый букет!
+            <blockquote class="blockquote-three">
+                <p class="feedback-text">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы
+                    всегда помогут и точно соберут красивый букет!</p>
                 <cite class="cite-three">Ольга</cite>
             </blockquote>
-            </p>
         </section>
-
         <section class="info">
             <img class="map" src="./image/map.jpg" alt="Расположение на карте">
             <div class="contacts">
@@ -167,19 +186,21 @@
         </section>
     </main>
     <footer class="page-footer">
-        <a><img class="logo-footer" src="./image/logo_footer.png" alt="Логотип"></a>
-        <ul class="menu-footer">
-            <li><a href="">Каталог</a></li>
-            <li><a href="">Доставка и оплата</a></li>
-            <li><a href="">Отзывы</a></li>
-            <li><a href="">Спецпредложения</a></li>
-            <li><a href="">Контакты</a></li>
-        </ul>
-        <div class="social">
-            <a class="inst"><img src="./image/instagram_icon.png" alt="логотип инстаграмма"></a>
-            <a class="face"><img src="./image/facebook_icon.png" alt="логотип фейсбука"></a>
-            <a class="twit"><img src="./image/twitter_icon.png" alt="логотип твиттера"></a>
-        </div>
+        <div>
+            <a><img class="logo-footer" src="./image/logo_footer.png" alt="Логотип"></a>
+          </div>   
+            <ul class="footer-menu">
+                <li><a class="footer" href="">Каталог</a></li>
+                <li><a class="footer" href="">Доставка и оплата</a></li>
+                <li><a class="footer" href="">Отзывы</a></li>
+                <li><a class="footer" href="">Спецпредложения</a></li>
+                <li><a class="footer" href="">Контакты</a></li>
+            </ul>
+            <div class="social">
+                <a class="inst"><img src="./image/instagram_icon.png" alt="логотип инстаграмма"></a>
+                <a class="face"><img src="./image/facebook_icon.png" alt="логотип фейсбука"></a>
+                <a class="twit"><img src="./image/twitter_icon.png" alt="логотип твиттера"></a>
+            </div>
     </footer>
 </body>
 
